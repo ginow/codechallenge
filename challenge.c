@@ -3,25 +3,25 @@
 int main()
 {
     // Read the number of test cases.
-    int T;
+    int T, K, N;
     scanf("%d", &T);
     while (T--)
     {
-        // Read the input a, b
-        int a, count = 0;
-        char f = '4';
-        scanf("%d", &a);
-        // char s[9] = a;
-        char s[9];
-        sprintf(s, "%d", a);
-        for (int i = 0; i < strlen(s); ++i)
+        scanf("%d %d", &N, &K);
+        if (K == 0)
         {
-            if (s[i] == f)
-            {
-                count++;
-            }
+            if (N % 4 == 0)
+                printf("Off\n");
+            else
+                printf("On\n");
         }
-        printf("%d\n", count);
+        else
+        {
+            if (N % 4 == 0)
+                printf("On\n");
+            else
+                printf("Ambiguous\n");
+        }
     }
     return 0;
 }
