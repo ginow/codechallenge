@@ -21,3 +21,13 @@
   // Get Length
   int size = sizeof(a1) / sizeof(*a1); // sizeof(*a1) returns the size of the first element of the array, which in this case is the size of an integer
   ```
+- Another way to iterate Array
+  ```c++
+  for (int& item: a1) {
+        cout << " " << item;
+  }
+  ```
+- Array sort
+  ```c++
+  sort(a1, a1 + size);
+  ```
