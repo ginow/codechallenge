@@ -67,3 +67,30 @@
     // 10. delete the last element
     v4.pop_back();
   ```
+- Array address and pointer
+  ```c++
+  int a[5] = {20, 1, 2, 3, 4};
+    cout<<"a:       "<<a<<endl;
+    cout<<"a+1:     "<<(a+1)<<endl;
+    cout<<"*a:      "<<*a<<endl;
+    cout<<"&a:      "<<&a<<endl;
+    cout<<"a[0]:    "<<a[0]<<endl;
+    cout<<"&a[0]:   "<<&a[0]<<endl;
+    cout<<"*(&a[0]):"<<*(&a[0])<<endl;
+    cout<<"(&a+1):  "<<(&a+1)<<endl; // This calculates the address of the element after the end of the array a. Since a is an array of integers, adding 1 to its address advances the pointer by the size of the entire array (sizeof(int) * number_of_elements_in_a). Therefore, (&a+1) points to the memory location just beyond the end of the array a.
+    cout<<"*(&a+1): "<<*(&a+1)<<endl; // This dereferences the address calculated by (&a+1), effectively giving you the value stored at that memory location. However, this memory location is just beyond the end of the array a. Dereferencing it leads to undefined behavior because it's accessing memory that isn't part of the array. In practice, this often results in printing the value stored at that memory location, which could be anything, but it's not reliable or meaningful.
+    cout<<"*(a+1):  "<<*(a+1)<<endl;
+    
+    /*
+    a:       0x7f7570c000a0
+    a+1:     0x7f7570c000a4
+    *a:      20
+    &a:      0x7f7570c000a0
+    a[0]:    20
+    &a[0]:   0x7f7570c000a0
+    *(&a[0]):20
+    (&a+1):  0x7f7570c000b4
+    *(&a+1): 0x7f7570c000b4
+    *(a+1):  1
+    */
+  ``` 
