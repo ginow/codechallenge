@@ -97,8 +97,8 @@
  - 2D Array
    ```c++
    #include <iostream>
-    template <size_t n, size_t m>
-    void printArray(int (&a)[n][m]) {
+    template <size_t n, size_t m>        // copies the function definition during compilation
+    void printArray(int (&a)[n][m]) {    // passes a by reference
         for (int i = 0; i < n; ++i) {
             for (int j = 0; j < m; ++j) {
                 cout << a[i][j] << " ";
