@@ -137,3 +137,26 @@
     7 0 0 0 0 
     */
    ```
+- Two Pointer technique
+  ```c++
+  #include <iostream>
+  void reverse(int *v, int N) {
+      int i = 0;
+      int j = N - 1;
+      while (i < j) {
+          swap(v[i], v[j]);
+          i++;
+          j--;
+      }
+  }
+  int main() {   
+      int c[7] = {1, 2, 3, 4, 5, 6, 7};
+      reverse(c,7);
+      for(int i=0;i<7;++i){
+          cout<<c[i]<<" ";
+      }   
+  }
+  /*
+  Output: 7 6 5 4 3 2 1
+  */
+  ```
