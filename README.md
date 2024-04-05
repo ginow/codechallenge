@@ -160,3 +160,27 @@
   Output: 7 6 5 4 3 2 1
   */
   ```
+- Two Pointer technique for space limitation
+  ``` c++
+  #include <iostream>
+  int removeElement(vector<int>& nums, int val) { // nums is a reference to a vector of integers.
+      int k = 0;
+      for (int i = 0; i < nums.size(); ++i) {
+          if (nums[i] != val) {
+              nums[k] = nums[i];
+              ++k;
+          }
+      }
+      return k;
+  }
+  int main() {   
+      vector<int> c = {1, 2, 3, 4, 5, 6, 7};
+      int k = removeElement(c,2);
+      for(int i=0;i<k;++i){
+          cout<<c[i]<<" ";
+      }   
+  }
+  /*
+  Output: 1 3 4 5 6 7
+  */
+  ```
