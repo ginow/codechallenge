@@ -162,6 +162,7 @@
   ```
 - Two Pointer technique for space limitation
   ``` c++
+  // Remove element without creating another array
   #include <iostream>
   int removeElement(vector<int>& nums, int val) { // nums is a reference to a vector of integers.
       int k = 0;
