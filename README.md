@@ -185,3 +185,6 @@
   Output: 1 3 4 5 6 7
   */
   ```
+- Hash Table
+  - Hash set is one of the implementations of a set data structure to store no repeated values
+  - Hash map is one of the implementations of a map data structure to store (key, value) pairs.
