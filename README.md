@@ -227,3 +227,22 @@
     hash set is empty now!
     */
   ```
+  - Find duplicates with Hashset
+    ```c++
+    #include <unordered_set>                // 0. include the library
+
+    bool findDuplicates(vector<int>& keys) {
+        unordered_set<int> hashset;
+        for (int key : keys) {
+            if (hashset.count(key) > 0) {
+                return true;
+            }
+            hashset.insert(key);
+        }
+        return false;
+    }
+    int main(){
+        vector<int> mykeys={1,9,2,2,3};
+        cout<<findDuplicates(mykeys); // Output: 1
+    }
+    ```
