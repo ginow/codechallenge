@@ -1,3 +1,6 @@
+## Progress
+Till here completed: https://leetcode.com/explore/learn/card/hash-table/184/comparison-with-other-data-structures/1129/
+
 ## Playground
 https://replit.com/
 
