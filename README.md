@@ -84,7 +84,7 @@ https://replit.com/
     cout<<"*(&a+1): "<<*(&a+1)<<endl; // This dereferences the address calculated by (&a+1), effectively giving you the value stored at that memory location. However, this memory location is just beyond the end of the array a. Dereferencing it leads to undefined behavior because it's accessing memory that isn't part of the array. In practice, this often results in printing the value stored at that memory location, which could be anything, but it's not reliable or meaningful.
     cout<<"*(a+1):  "<<*(a+1)<<endl;
     int *b=a;
-    cout<<"*b:      "<<b<<endl;
+    cout<<"b:      "<<b<<endl;
     /*
     a:       0x7f7570c000a0
     a+1:     0x7f7570c000a4
