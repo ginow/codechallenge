@@ -140,7 +140,7 @@ https://replit.com/
     7 0 0 0 0 
     */
    ```
-- Two Pointer technique
+- Two Pointer technique to reverse array
   ```c++
   #include <iostream>
   void reverse(int *v, int N) {
