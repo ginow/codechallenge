@@ -96,7 +96,7 @@ https://replit.com/
     (&a+1):  0x7f7570c000b4
     *(&a+1): 0x7f7570c000b4
     *(a+1):  1
-    b:      0x7f7570c000a0
+    b:       0x7f7570c000a0
     */
   ``` 
  - 2D Array
