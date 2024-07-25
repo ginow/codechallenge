@@ -216,117 +216,117 @@ https://replit.com/
   - Hash map is one of the implementations of a map data structure to store (key, value) pairs.
  
 ### Hash Set example
-  ```c++
-    #include <unordered_set>                // 0. include the library
-    
-    int main() {
-        // 1. initialize a hash set
-        unordered_set<int> hashset;   
-        // 2. insert a new key
-        hashset.insert(3);
-        hashset.insert(2);
-        hashset.insert(1);
-        // 3. delete a key
-        hashset.erase(2);
-        // 4. check if the key is in the hash set
-        if (hashset.count(2) <= 0) {
-            cout << "Key 2 is not in the hash set." << endl;
-        }
-        // 5. get the size of the hash set
-        cout << "The size of hash set is: " << hashset.size() << endl; 
-        // 6. iterate the hash set
-        for (auto it = hashset.begin(); it != hashset.end(); ++it) {
-            cout << (*it) << " ";
-        }
-        cout << "are in the hash set." << endl;
-        // 7. clear the hash set
-        hashset.clear();
-        // 8. check if the hash set is empty
-        if (hashset.empty()) {
-            cout << "hash set is empty now!" << endl;
-        }
-    }
-    /*
-    Key 2 is not in the hash set.
-    The size of has set is: 2
-    1 3 are in the hash set.
-    hash set is empty now!
-    */
+  ``` c++
+  #include <unordered_set>                // 0. include the library
+  
+  int main() {
+      // 1. initialize a hash set
+      unordered_set<int> hashset;   
+      // 2. insert a new key
+      hashset.insert(3);
+      hashset.insert(2);
+      hashset.insert(1);
+      // 3. delete a key
+      hashset.erase(2);
+      // 4. check if the key is in the hash set
+      if (hashset.count(2) <= 0) {
+          cout << "Key 2 is not in the hash set." << endl;
+      }
+      // 5. get the size of the hash set
+      cout << "The size of hash set is: " << hashset.size() << endl; 
+      // 6. iterate the hash set
+      for (auto it = hashset.begin(); it != hashset.end(); ++it) {
+          cout << (*it) << " ";
+      }
+      cout << "are in the hash set." << endl;
+      // 7. clear the hash set
+      hashset.clear();
+      // 8. check if the hash set is empty
+      if (hashset.empty()) {
+          cout << "hash set is empty now!" << endl;
+      }
+  }
+  /*
+  Key 2 is not in the hash set.
+  The size of has set is: 2
+  1 3 are in the hash set.
+  hash set is empty now!
+  */
   ```
-  ### Find duplicates with Hashset
-    ```c++
-    #include <unordered_set>                // 0. include the library
+### Find duplicates with Hashset
+  ```c++
+  #include <unordered_set>                // 0. include the library
 
-    bool findDuplicates(vector<int>& keys) {
-        unordered_set<int> hashset;
-        for (int key : keys) {
-            if (hashset.count(key) > 0) {
-                return true;
-            }
-            hashset.insert(key);
-        }
-        return false;
-    }
-    int main(){
-        vector<int> mykeys={1,9,2,2,3};
-        cout<<findDuplicates(mykeys); // Output: 1
-    }
-    ```
-  ### Hash map
-    ```c++
-    #include <bits/stdc++.h>
-    #include <unordered_map>
-    
-    using namespace std;
-    
-    int main() {
-      // 1. initialize a hash map
-      unordered_map<int, int> hashmap;
-      // 2. insert a new (key, value) pair
-      hashmap.insert(make_pair(0, 5));
-      hashmap.insert(make_pair(2, 3));
-      cout << "The value of key 0 is: " << hashmap[0] << endl;
-      cout << "The value of key 1 is: " << hashmap[1]
-           << endl; // There is no key 1, so 0 will be output
-      cout << "The value of key 2 is: " << hashmap[2] << endl;
-      cout << "The value of key 3 is: " << hashmap[3]
-           << endl; // There is no key 3, so 0 will be output and 3 will get
-                    // inserted in the hashmap
-      //  3. insert a new (key, value) pair or update the value of existed key
-      hashmap[1] = 8;
-      cout << "The value of key 1 is: " << hashmap[1] << endl;
-      hashmap[1] = 9;
-      cout << "The value of key 1 is: " << hashmap[1] << endl;
-    
-      // 5. delete a key
-      hashmap.erase(2);
-      // 6. check if a key is in the hash map
-      if (hashmap.count(2) <= 0) {
-        cout << "Key 2 is not in the hash map." << endl;
+  bool findDuplicates(vector<int>& keys) {
+      unordered_set<int> hashset;
+      for (int key : keys) {
+          if (hashset.count(key) > 0) {
+              return true;
+          }
+          hashset.insert(key);
       }
-      // 7. get the size of the hash map
-      cout << "the size of hash map is: " << hashmap.size() << endl;
-      // 8. iterate the hash map
-      for (auto it = hashmap.begin(); it != hashmap.end(); ++it) {
-        cout << "(" << it->first << "," << it->second << ") ";
-      }
-      cout << "are in the hash map." << endl;
-      // 9. clear the hash map
-      hashmap.clear();
-      // 10. check if the hash map is empty
-      if (hashmap.empty()) {
-        cout << "hash map is empty now!" << endl;
-      }
+      return false;
+  }
+  int main(){
+      vector<int> mykeys={1,9,2,2,3};
+      cout<<findDuplicates(mykeys); // Output: 1
+  }
+  ```
+### Hash map
+  ```c++
+  #include <bits/stdc++.h>
+  #include <unordered_map>
+  
+  using namespace std;
+  
+  int main() {
+    // 1. initialize a hash map
+    unordered_map<int, int> hashmap;
+    // 2. insert a new (key, value) pair
+    hashmap.insert(make_pair(0, 5));
+    hashmap.insert(make_pair(2, 3));
+    cout << "The value of key 0 is: " << hashmap[0] << endl;
+    cout << "The value of key 1 is: " << hashmap[1]
+         << endl; // There is no key 1, so 0 will be output
+    cout << "The value of key 2 is: " << hashmap[2] << endl;
+    cout << "The value of key 3 is: " << hashmap[3]
+         << endl; // There is no key 3, so 0 will be output and 3 will get
+                  // inserted in the hashmap
+    //  3. insert a new (key, value) pair or update the value of existed key
+    hashmap[1] = 8;
+    cout << "The value of key 1 is: " << hashmap[1] << endl;
+    hashmap[1] = 9;
+    cout << "The value of key 1 is: " << hashmap[1] << endl;
+  
+    // 5. delete a key
+    hashmap.erase(2);
+    // 6. check if a key is in the hash map
+    if (hashmap.count(2) <= 0) {
+      cout << "Key 2 is not in the hash map." << endl;
     }
-    /*
-    The value of key 1 is: 0
-    The value of key 2 is: 3
-    The value of key 3 is: 0
-    The value of key 1 is: 8
-    The value of key 1 is: 9
-    Key 2 is not in the hash map.
-    the size of hash map is: 3
-    (3,0) (1,9) (0,5) are in the hash map.
-    hash map is empty now!
-    */
-    ```
+    // 7. get the size of the hash map
+    cout << "the size of hash map is: " << hashmap.size() << endl;
+    // 8. iterate the hash map
+    for (auto it = hashmap.begin(); it != hashmap.end(); ++it) {
+      cout << "(" << it->first << "," << it->second << ") ";
+    }
+    cout << "are in the hash map." << endl;
+    // 9. clear the hash map
+    hashmap.clear();
+    // 10. check if the hash map is empty
+    if (hashmap.empty()) {
+      cout << "hash map is empty now!" << endl;
+    }
+  }
+  /*
+  The value of key 1 is: 0
+  The value of key 2 is: 3
+  The value of key 3 is: 0
+  The value of key 1 is: 8
+  The value of key 1 is: 9
+  Key 2 is not in the hash map.
+  the size of hash map is: 3
+  (3,0) (1,9) (0,5) are in the hash map.
+  hash map is empty now!
+  */
+  ```
