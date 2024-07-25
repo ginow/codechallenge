@@ -4,6 +4,24 @@ Till here completed: https://leetcode.com/explore/learn/card/hash-table/184/comp
 ## Playground
 https://replit.com/
 
+- [Progress](#progress)
+- [Playground](#playground)
+- [C++ notes](#c-notes)
+  - [String comparison using "=="](#string-comparison-using-)
+  - [String functions](#string-functions)
+  - [Array](#array)
+  - [Another way to iterate Array](#another-way-to-iterate-array)
+  - [Array sort](#array-sort)
+  - [Dynamic array](#dynamic-array)
+  - [Array address and pointer](#array-address-and-pointer)
+  - [2D Array](#2d-array)
+  - [Two Pointer technique to reverse array](#two-pointer-technique-to-reverse-array)
+  - [Two Pointer technique for space limitation](#two-pointer-technique-for-space-limitation)
+  - [Hash Table](#hash-table)
+  - [Hash Set example](#hash-set-example)
+  - [Find duplicates with Hashset](#find-duplicates-with-hashset)
+  - [Hash map](#hash-map)
+
 ## C++ notes
 
 ### String comparison using "=="
