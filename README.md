@@ -6,13 +6,13 @@ https://replit.com/
 
 ## C++ notes
 
-- String comparison using "=="
+### String comparison using "=="
   ```c++
   string a="abc";
   string b="abc";
   cout<<(a==b); // Output is 1
   ```
-- String functions
+### String functions
   ```c++
   string s1 = "Hello World";
   // find
@@ -21,23 +21,23 @@ https://replit.com/
   // get substr
   cout << s1.substr(6, 5) << endl; // world
   ```
-- Array
+### Array
   ```c++
   int a1[5] = {1, 2, 3};  // other element will be set as the default value
   // Get Length
   int size = sizeof(a1) / sizeof(*a1); // sizeof(*a1) returns the size of the first element of the array, which in this case is the size of an integer
   ```
-- Another way to iterate Array
+### Another way to iterate Array
   ```c++
   for (int& item: a1) {
         cout << " " << item;
   }
   ```
-- Array sort
+### Array sort
   ```c++
   sort(a1, a1 + size);
   ```
-- Dynamic array
+### Dynamic array
   ```c++
     // 1. initialize
     vector<int> v0;
@@ -73,7 +73,7 @@ https://replit.com/
     // 10. delete the last element
     v4.pop_back();
   ```
-- Array address and pointer
+### Array address and pointer
   ```c++
   int a[5] = {20, 1, 2, 3, 4};
     cout<<"a:       "<<a<<endl;
@@ -102,7 +102,7 @@ https://replit.com/
     b:       0x7f7570c000a0
     */
   ``` 
- - 2D Array
+ ### 2D Array
    ```c++
    #include <iostream>
     template <size_t n, size_t m>        // copies the function definition during compilation
@@ -145,7 +145,7 @@ https://replit.com/
     7 0 0 0 0 
     */
    ```
-- Two Pointer technique to reverse array
+### Two Pointer technique to reverse array
   ```c++
   #include <iostream>
   void reverse(int *v, int N) {
@@ -168,7 +168,7 @@ https://replit.com/
   Output: 7 6 5 4 3 2 1
   */
   ```
-- Two Pointer technique for space limitation
+### Two Pointer technique for space limitation
   ``` c++
   // Remove element without creating another array
   #include <iostream>
@@ -193,11 +193,11 @@ https://replit.com/
   Output: 1 3 4 5 6 7
   */
   ```
-- Hash Table
+### Hash Table
   - Hash set is one of the implementations of a set data structure to store no repeated values
   - Hash map is one of the implementations of a map data structure to store (key, value) pairs.
  
-- Hash Set example
+### Hash Set example
   ```c++
     #include <unordered_set>                // 0. include the library
     
@@ -235,7 +235,7 @@ https://replit.com/
     hash set is empty now!
     */
   ```
-  - Find duplicates with Hashset
+  ### Find duplicates with Hashset
     ```c++
     #include <unordered_set>                // 0. include the library
 
@@ -254,7 +254,7 @@ https://replit.com/
         cout<<findDuplicates(mykeys); // Output: 1
     }
     ```
-  - Hash map
+  ### Hash map
     ```c++
     #include <bits/stdc++.h>
     #include <unordered_map>
