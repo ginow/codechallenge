@@ -4,8 +4,10 @@ Till here completed: https://leetcode.com/explore/learn/card/hash-table/184/comp
 ## Playground
 https://replit.com/
 
+## Table of contents
 - [Progress](#progress)
 - [Playground](#playground)
+- [Table of contents](#table-of-contents)
 - [C++ notes](#c-notes)
   - [String comparison using "=="](#string-comparison-using-)
   - [String functions](#string-functions)
@@ -23,6 +25,8 @@ https://replit.com/
   - [Hash map](#hash-map)
 - [Data Structure and Algorithms](#data-structure-and-algorithms)
   - [Big O](#big-o)
+  - [Why Hash maps](#why-hash-maps)
+  - [Conflict in hashmap](#conflict-in-hashmap)
 
 ## C++ notes
 
@@ -348,3 +352,14 @@ https://replit.com/
 <img src="assets/bigO_5.PNG" alt="Different inputs different variables" height="400">
 
 <img src="assets/bigO_6.PNG" alt="Drop non dominant terms" height="400">
+
+### Why Hash maps
+- Combine array and linked list feature to get hash map
+- arrays have fixed size, linked lists have variable size but elements can't be accessed easily (need to traverse each one)
+
+  ![why hash map](assets/whyhashmap.png)
+
+### Conflict in hashmap
+- ant tries to be placed at apple
+
+  ![alt text](assets/image.png)
