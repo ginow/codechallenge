@@ -337,10 +337,14 @@ https://replit.com/
 
 ### Big O
 
-![Pigeon scenario](assets/bigO_1.PNG)
-![Different steps get added](assets/bigO_2.PNG)  
-![Drop constants](assets/bigO_3.PNG)
-![Area of field](assets/bigO_4.PNG)
-![Different inputs different variables](assets/bigO_5.PNG)
-![Drop non dominant terms](assets/bigO_6.PNG)
+<img src="assets/bigO_1.PNG" alt="Pigeon scenario" height="400">
 
+<img src="assets/bigO_2.PNG" alt="Different steps get added" height="400">
+
+<img src="assets/bigO_3.PNG" alt="Drop constants" height="400">
+
+<img src="assets/bigO_4.PNG" alt="Area of field" height="400">
+
+<img src="assets/bigO_5.PNG" alt="Different inputs different variables" height="400">
+
+<img src="assets/bigO_6.PNG" alt="Drop non dominant terms" height="400">
