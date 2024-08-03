@@ -21,6 +21,8 @@ https://replit.com/
   - [Hash Set example](#hash-set-example)
   - [Find duplicates with Hashset](#find-duplicates-with-hashset)
   - [Hash map](#hash-map)
+- [Data Structure and Algorithms](#data-structure-and-algorithms)
+  - [Big O](#big-o)
 
 ## C++ notes
 
@@ -330,3 +332,15 @@ https://replit.com/
   hash map is empty now!
   */
   ```
+
+## Data Structure and Algorithms
+
+### Big O
+
+![Pigeon scenario](assets/bigO_1.PNG)
+![Different steps get added](assets/bigO_2.PNG)  
+![Drop constants](assets/bigO_3.PNG)
+![Area of field](assets/bigO_4.PNG)
+![Different inputs different variables](assets/bigO_5.PNG)
+![Drop non dominant terms](assets/bigO_6.PNG)
+
